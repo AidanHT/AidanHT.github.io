@@ -587,6 +587,9 @@ small {
 }
 
 @media (max-width: 992px) {
+  #projects, #places-travelled {
+    padding-bottom: 94px; /* Clear the template's 64px mobile content offset. */
+  }
   main {
     padding-left: 0px;
     padding-top: 64px;
@@ -698,4 +701,25 @@ small {
 }
 .card .card-action a:hover {
   text-decoration: underline;
+}
+
+#snorlax-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  z-index: 10000;
+  pointer-events: none;
+  visibility: hidden;
+}
+#snorlax-cursor img {
+  animation: snorlax-breathe 2s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+@keyframes snorlax-breathe {
+  50% { transform: translateY(-3px) scale(1.04); }
+}
+@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  #snorlax-cursor { display: none; }
 }
