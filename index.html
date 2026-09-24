@@ -252,37 +252,9 @@
     <!-- Fourth Section: Projects -->
     <section class="section scrollspy" id="projects"><h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
-
-        <div class="card">
-          <div class="card-content">
-          <span class="card-title teal-text">Parity</span>
-          <p class="brown-text">Python · Rust · TypeScript · ArkTS · openJiuwen · SwarmFlow · HarmonyOS</p>
-          <ul>
-          <li>Autonomous multi-agent code migration system; won first place in Huawei’s openJiuwen Multi-Agent Challenge at Hack the North 2026.</li>
-          <li>Coordinated ReAct agents for planning, code generation, expert guidance, and adversarial testing.</li>
-          <li>Migrated 23 functions across three language pairs, passing 2,146 hidden tests.</li>
-          </ul></div>
-          <div class="card-action"><a aria-label="View Parity on GitHub" href="https://github.com/AidanHT/Parity">View Parity on GitHub</a></div></div>
-        <div class="card">
-          <div class="card-content">
-          <span class="card-title teal-text">Promptly</span>
-          <p class="brown-text">Rust · Python · TypeScript · React · PostgreSQL · AWS</p>
-          <ul>
-          <li>Launched a platform scoring LLM prompt efficiency, reaching more than 250 users in five days.</li>
-          <li>Built a distributed execution engine with a Rust daemon and CLI, Docker, and AWS, supporting seven language runtimes with per-job isolation.</li>
-          <li>Implemented Ed25519 request signing, anti-cheat verification, and row-level access control.</li>
-          </ul></div>
-          <div class="card-action"><a aria-label="View Promptly daemon on GitHub" href="https://github.com/AidanHT/promptly-daemon">View Promptly on GitHub</a></div></div>
-        <div class="card">
-          <div class="card-content">
-          <span class="card-title teal-text">FuseML</span>
-          <p class="brown-text">Python · CUDA · Triton · PyTorch · cuBLASLt · TorchDynamo/FX</p>
-          <ul>
-          <li>Built a PyTorch JIT compiler that fuses GEMM and pointwise operations into CUDA and Triton kernels.</li>
-          <li>Reduced HBM traffic by 70% with a 1.79× speedup.</li>
-          <li>Designed a ten-stage compiler pipeline with a three-tier cost model and SRAM autotuning; validated with 888 pytest cases across 12 GPU benchmarks.</li>
-          </ul></div>
-          <div class="card-action"><a aria-label="View FuseML on GitHub" href="https://github.com/AidanHT/FuseML">View FuseML on GitHub</a></div></div></div>
+        <div id="project-list" aria-live="polite"></div>
+        <button id="load-more-projects" class="btn teal" type="button" aria-controls="project-list">Load More</button>
+      </div>
     </section>
 
     <!-- Fifth Section: Skills -->
@@ -328,6 +300,8 @@
         <p>Connect with me on LinkedIn or explore my projects on GitHub.</p><p><a class="hoverline" href="https://www.linkedin.com/in/aidantran120/">LinkedIn · Aidan Tran</a></p><p><a class="hoverline" href="https://github.com/AidanHT">GitHub · AidanHT</a></p></div>
     </section>
   </main>
+
+  <script src="assets/js/projects.js"></script>
 
   <!-- typed.js -->
   <script src="assets/vendor/typed.js/typed.min.js"></script>
